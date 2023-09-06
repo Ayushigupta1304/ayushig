@@ -1,0 +1,319 @@
+<p class="section_text_p1"> Hello,I am </p>
+/* boxicons */
+ <link rel="stylesheet"
+ href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+ 
+ /* font export */
+ @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Poppins:ital,wght@0,500;1,300;1,500&family=Roboto&display=swap');
+ /* general styling */
+ *{
+   margin: 0;
+   padding: 0;
+}
+body{
+   font-family: "Poppins", sans-serif ;
+}
+html{
+   scroll-behavior: smooth;
+}
+p{
+   color: rgba(85,85,85);
+}
+/* Transistion */
+a,
+.btn{
+   transition: all 300ms ease;
+}
+/* DESKTOP NAVIGATION */
+nav, .nav-links{
+   display: flex;
+}
+
+nav{
+   justify-content: space-around;
+   align-items: center;
+   height: 17vh;
+}
+.nav-links{
+   gap: 2rem;
+   list-style: none;
+   font-size: 1.5rem;
+}
+
+a{
+   color: black;
+   text-decoration: none;
+   text-decoration-color: white;
+}
+
+a:hover{
+   color: grey;
+   text-decoration: underline;
+   text-underline-offset: 1rem; 
+   text-decoration-color: rgb(181,181,181);
+}
+.logo{
+   font-size: 2rem;
+}
+.logo:hover{
+   cursor: default;
+}
+
+/* Section */
+section{
+   padding-top: 4vh;
+   height: 96vh;
+   margin: 0 10rem;
+   box-sizing: border-box;
+   min-height: fit-content;
+}
+.section-container{
+   display: flex;
+}
+/* PROFILE PICTURE */
+ #profile{
+   display: flex;
+   justify-content: center;
+   gap: 5rem;
+   height: 88vh;
+ }
+ 
+ .section_pic-container{
+   display: flex;
+   height: 400px;
+   width: 400px;
+   margin: auto 0;
+ }
+
+ .section_text{
+   align-self: center;
+   text-align: center;
+ }
+ .section_text_p{
+   font-weight: 600;
+ }
+
+ .section_text_p1{
+   text-align: center;
+   
+ }
+
+ .section_text_p2{
+   text-align: center;
+   font-size: 1.75rem;
+   margin-bottom: 1rem;
+ }
+.title{
+   font-size: 3rem;
+   text-align: center;
+}
+
+#socials-container1,
+#socials-container2{
+   display: flex;
+   justify-content: center;
+   margin: 1rem;
+   gap: 1rem;
+}
+
+.half-div{
+   display: flex;
+   justify-content: center;
+}
+
+/* Icons */
+.icon{
+   cursor: pointer;
+   height: 2rem;
+   
+}
+
+/* BUTTONS */
+
+.btn-container {
+   display: flex;
+   justify-content: center;
+   gap: 1rem;
+ }
+ 
+ .btn {
+   font-weight: 600;
+   transition: all 300ms ease;
+   padding: 1rem;
+   width: 8rem;
+   border-radius: 2rem;
+ }
+ 
+ .btn-color-1,
+ .btn-color-2 {
+   border: rgb(53, 53, 53) 0.1rem solid;
+ }
+ 
+ .btn-color-1:hover,
+ .btn-color-2:hover {
+   cursor: pointer;
+ }
+ 
+ .btn-color-1,
+ .btn-color-2:hover {
+   background: rgb(53, 53, 53);
+   color: white;
+ }
+ 
+ .btn-color-1:hover {
+   background: rgb(0, 0, 0);
+ }
+ 
+ .btn-color-2 {
+   background: none;
+ }
+ 
+ .btn-color-2:hover {
+   border: rgb(255, 255, 255) 0.1rem solid;
+ }
+ 
+ .btn-container {
+   gap: 1rem;
+ }
+
+/* /ABOUT SECTION */
+#about{
+   position: relative;
+
+}
+.about-containers{
+   gap: 2rem;
+}
+.about-details-container{
+   flex-direction: column;
+
+}
+.about-containers,.about-details-container{
+   display: flex;
+}
+.about-pic{
+   border-radius: 2rem;
+}
+.arrow{
+   position: absolute;
+   right: -5rem;
+   bottom: 2.5rem;
+}
+.details-container{
+   display:flex;
+   margin: 1rem;
+   width: 400px;
+   height: 50px;
+   padding:1.5rem ;
+   flex: 1;
+   /* flex-grow: In the context of flex: 1;, 
+   it means that the flex item will take up all the
+    available space in the container that hasn't been
+     occupied by other flex items. In other words, 
+     the item will grow to fill the remaining space 
+     proportionally.*/
+   background: white;
+   border-radius: 2rem;
+   border: rgb(53,53,53) 0.1rem solid;
+   border-color: rgb(163,163,163);
+   text-align: center;
+
+}
+.section-container{
+   gap: 4rem;
+   height: 80%;
+}
+.section_pic-container{
+   height: 400px;
+   width: 400px;
+   margin: auto 0;
+}
+
+#exp_img, #edu_img{
+   margin-top: 1rem;
+   margin-left: 1rem;
+}
+
+#experience-heading,#education-heading{
+   margin-left: 1rem ;
+}
+
+#my-exp-content{
+   margin-left: 2rem;
+}
+
+#my-edu-content{
+   margin-left: 2rem;
+}
+
+/* EXPERIENCE SECTION */
+#experience {
+   position:relative
+}
+.flex-box{
+   width: 200px;
+   height: 200px;
+   background-color: rgb(181,181,181);
+   color: black;
+   font-size: 15px;
+   text-align: center;
+   line-height: 40px;
+   border-radius: 20px;
+
+}
+.flex-container{
+   width: 100%;
+   height: auto;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 1rem;
+   justify-content: center;
+}
+
+/* CONTACT PAGE */
+.conatct-info{
+   display: flex;
+   width: 100%;
+   max-width: 1200px;
+   align-items: center;
+   justify-content: center;
+   padding: 0 20px;
+}
+.card{
+   background: black;
+   padding: 0 20px;
+   margin: 0 10px;
+   width: calc(33% - 20px);
+   height: 200px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color:#fff;
+   cursor: pointer;
+}
+
+.card-icon{
+   font-size:28px;
+   
+   width:60px;
+   height:60px;
+   text-align: center;
+   line-height: 60px;
+   border-radius: 50%;
+   transition: 0.3s linear;
+}
+
+.card:hover .card-icon{
+   background: none;
+   color:blue; 
+   transform: scale(1.6);
+}
+
+.contact-para{
+   font-family: "Poppins", sans-serif;
+   color: aqua;
+   font-size: 1.5rem;
+}
+
+  
